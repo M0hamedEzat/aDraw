@@ -1,75 +1,99 @@
-body
-{
-    margin: 0;
-    background: url(1.jpg);
-    
-}
-.container
-{
-    position: absolute;
-    border-color: rgb(255, 0, 0);
-    border-radius: 100%;
-    background-color: yellow;
-    width: 400px;
-    height: 400px;
-    display: flex;
-    top: 25%;
-    right: 35%;
-
+body {
+  margin: 0;
+  background: url(1.jpg);
 }
 
-.eyes
-{
-    position: absolute;
-    background-color: antiquewhite;
-    border: 30px green;
-    width: 60px;
-    height: 60px;
-    border-radius: 100px 50px 100px 50px;
-    top: 100px;
-    left: 100px;
+.container {
+  position: absolute;
+  border-color: rgb(255, 0, 0);
+  border-radius: 100%;
+  background-color: yellow;
+  width: 40%;
+  height: 40%;
+  display: flex;
+  top: 25%;
+  right: 30%;
 }
-.eyes1
-{
-    position: absolute;
-    background-color: antiquewhite;
-    border: 30px green;
-    width: 60px;
-    height: 60px;
-    border-radius: 50px 100px;
-    top: 100px;
-    right: 100px;
+
+.eyes {
+  position: absolute;
+  background-color: antiquewhite;
+  border: 4vw solid green;
+  width: 8vw;
+  height: 8vw;
+  border-radius: 100px 50px 100px 50px;
+  top: 20%;
+  left: 20%;
 }
-.mouth
-{
-    position: absolute;
-    background-color: red;
-    width: 250px;
-    height: 100px;
-    top: 60%;
-    right: 70px;
-    border-radius: 20px 20px 100px 100px;
+
+.eyes1 {
+  position: absolute;
+  background-color: antiquewhite;
+  border: 4vw solid green;
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50px 100px;
+  top: 20%;
+  right: 20%;
 }
-.mouth:hover
-{
-    border: 100px;
+
+.mouth {
+  position: absolute;
+  background-color: red;
+  width: 60%;
+  height: 10%;
+  top: 60%;
+  right: 10%;
+  border-radius: 20px 20px 100px 100px;
 }
-#eyebraw
-{
-    background-color: black;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 25px;
-    border-radius: 100px;
+
+.mouth:hover {
+  border: 100px;
 }
-#eyebraw1
-{
-    background-color: black;
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border-radius: 100px;
-    left: 30px;
-    top: 25px;
+
+#eyebraw {
+  background-color: black;
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  top: 10%;
+  border-radius: 100px;
+}
+
+#eyebraw1 {
+  background-color: black;
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 100px;
+  left: 10%;
+  top: 10%;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+    height: 80%;
+    right: 10%;
+  }
+
+  .eyes,
+  .eyes1 {
+    border: 6vw solid green;
+    width: 12vw;
+    height: 12vw;
+  }
+
+  .mouth {
+    width: 80%;
+    height: 12%;
+    right: 10%;
+  }
+
+  #eyebraw,
+  #eyebraw1 {
+    width: 6vw;
+    height: 6vw;
+  }
 }
